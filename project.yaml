@@ -1,0 +1,77 @@
+basic:
+    name: Ronin
+    environments:
+        production: 'https://www.ronin.com'
+        staging: 'https://ronin-u9.fatumbraco.dev'
+        development: ''
+    breakpoints:
+        - 320
+        - 1200
+    pages:
+        - /
+        - /audiences
+        - /b2b-audiences
+        - /investors-finance-audiences
+        - /leaders-experts-audiences
+        - /healthcare-life-sciences-audiences
+        - /social-consumer-audiences
+        - /media-advertising-audiences
+        - /methods
+        - /qual-quant
+        - /cati
+        - /moderation-depth-interviews
+        - /digital-recruitment
+        - /ronin-edge
+        - /mixed-methodologies
+        - /who-we-are
+        - /who-we-are/meet-the-team
+        - /case-studies
+        - /compliance-at-ronin
+        - /compliance-at-ronin/iso-20252
+        - /compliance-at-ronin/iso-27001
+        - /compliance-at-ronin/data-protection
+        - /compliance-at-ronin/memberships
+        - /compliance-at-ronin/esomar-37
+        - /participants
+        - /contact
+        - /careers
+        - /news-insights
+        - /privacy-notice
+        - /site-map
+    monitoring:
+        days: [Sun]
+        type: weekly
+        schedule_time: '01:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 0
+    scroll: false
+    headers:
+        - { value: '', header: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
