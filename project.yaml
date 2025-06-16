@@ -4,10 +4,6 @@ basic:
         production: 'https://www.ronin.com'
         staging: 'https://ronin-u9.fatumbraco.dev'
         development: ''
-    basicAuth:
-        production: { user: '', password: '' }
-        staging: { user: '', password: '' }
-        development: { user: '', password: '' }
     breakpoints:
         - 320
         - 1200
@@ -54,13 +50,11 @@ advanced:
     remove: ''
     delay: 0
     scroll: false
-    headers:
-        - { value: '', header: '' }
+    headers: {  }
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content:
-        - { selector: '', type: title }
+    mock_content: {  }
     sensitivity: 5
     night_mode: false
     retina_images: false
